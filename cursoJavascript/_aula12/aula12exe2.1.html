@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <style>
+        input#botao{
+            width: 300px;
+            height: 300px;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+<body>
+    <input type="button" value="Clique para ver o tempo" onclick="clicar()" id="botao"/> 
+    <div id="res">
+
+    </div>
+    <script>
+        var agora = new Date() //new Date (pega a hora atual do sistema)
+        var hora = agora.getHours() //Chama o método new Date para a execução 
+        var madru = 'Boa madrugada!!!'
+        var dia = 'Bom dia!!!'
+        var tarde = 'Boa tarde!!!'
+        var noite = 'Boa noite!!!'
+        function clicar(){
+            document.write(`Agora são exatamente ${hora} Horas`)
+                if (hora >= 0 && hora < 6) {
+                    document.write('<br>Boa madrugada!!</br>')
+                } else if (hora >= 6 && hora < 12){
+                    document.write(`<br>${dia}</br>`) 
+                } else if (hora >= 12 && hora < 18) {
+                    document.write('<br>Boa tarde!!</br>')
+                } else if (hora >= 18 && hora <= 23) {
+                    document.write('<br>Boa noite!!</br>')
+                }
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>

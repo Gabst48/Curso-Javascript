@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2020</title>
+   
+</head>
+<body>
+    <h1>Eleições 2020</h1>
+
+    <input type="number" name="txtn1" id="txtn1"/>
+    <input type="button" value="enviar" onclick="enviar()" id="botao"/>
+    <div id='res'>
+
+    </div>
+
+    <script>
+        function enviar() {
+            var txte = window.document.querySelector('input#txtn1')
+            var str = Number(txte.value)
+            var res = window.document.querySelector('div#res')
+            if (str < 16) {
+                document.write('Não vota.')
+            } else if (str < 18 || str >= 65) {
+                document.write('Voto opcional.')
+            } else if (str >= 18) {
+                document.write('Voto obrigatório.')
+            } 
+
+        }
+
+    </script>
+
+</body>
+</html>

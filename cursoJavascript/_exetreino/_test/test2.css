@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgba(240, 128, 128, 0.644);
+}
+
+section {
+    background-color: white;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+div {
+    font-size: 20px;
+}
+
+div#res {
+    margin-top: 10px;
+}

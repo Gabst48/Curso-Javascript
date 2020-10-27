@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da semana</title>
+</head>
+    <body>
+        <input type="button" value="Descubra o dia de hoje" onclick="clicar()" id="botao"/>
+        <script>
+            var dia = new Date()
+            var hoje = dia.getDay()
+            function clicar() {
+                switch (hoje) {
+                    case 0:
+                        document.write('Hoje é Domingo.')
+                    break
+                    case 1:
+                        document.write('Hoje é segunda-feira.')
+                    break
+                    case 2:
+                    document.write('Hoje é Terça-feira.')
+                    break
+                    case 3:
+                        document.write('Hoje é Quarta-feira.')
+                    break
+                    case 4:
+                        document.write('Hoje é Quinta-feira.')
+                    break
+                    case 5:
+                        document.write('Hoje é Sexta-feira!!!! ')
+                    break
+                    case 6: 
+                        document.write('Hoje é Sábado.')
+                    break
+                }
+                document.write('<br><strong>Tenha uma boa semana!</strong></br>') 
+
+
+
+            }
+
+        </script>
+ 
+    </body>
+</html>
